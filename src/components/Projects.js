@@ -6,8 +6,8 @@ const Projects = () => {
 	const project = [
 		{
 			name: 'portfolio',
-			web_url: 'htps://www.portfolio.com',
-			github_url: '',
+			web_url: 'https://andrewgarcia.netlify.app/',
+			github_url: 'https://github.com/andrwgarciaa/portfolio',
 			description:
 				'My own personal portfolio webpage. Designed and developed alone, according to my taste.',
 		},
