@@ -100,6 +100,7 @@ body {
 
 .greetings > p {
 	font-size: 2rem;
+	text-align: left;
 }
 
 .stack {
@@ -210,6 +211,160 @@ body {
 	align-items: center;
 }
 
+.credits {
+	position: absolute;
+	bottom: 2em;
+	font-size: 0.8em;
+}
+
+@media screen and (max-width: 1060px) {
+	.container {
+		width: 80vw;
+		height: 100vh;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.greetings h1 {
+		width: 80vw;
+	}
+	.greetings p {
+		width: 60vw;
+	}
+
+	.nav ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 50vw;
+	}
+
+	.nav-link hidden {
+		display: none;
+	}
+
+	.nav-text {
+		color: var(--grey);
+	}
+
+	.nav-icon {
+		display: none;
+	}
+
+	.nav-link .active {
+		display: initial;
+	}
+	.show {
+		display: none;
+	}
+	.project-card {
+		border-radius: 20px;
+		width: 350px;
+		height: 350px;
+	}
+	.capture {
+		font-size: 0.6rem;
+		margin-top: -1.5em;
+	}
+	.project p {
+		width: 70%;
+		font-size: 0.9rem;
+	}
+	.capture img {
+		width: 320px;
+		height: 140px;
+		border-radius: 10px;
+	}
+	.project-links {
+		width: 80%;
+		font-size: 0.7rem;
+		padding: 0.2em 0.4em;
+	}
+	.project-links a {
+		border-radius: 10px;
+	}
+	.contacts {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.credits {
+		writing-mode: vertical-lr;
+		left: 2em;
+		bottom: initial;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.greetings {
+		align-items: flex-start;
+		width: 70vw;
+	}
+	.nav ul {
+		gap: 2em;
+	}
+
+	.nav-text {
+		width: 5em;
+	}
+}
+@media screen and (max-width: 740px) {
+	.greetings {
+		align-items: flex-start;
+		width: 70vw;
+	}
+	.greetings h1 {
+		text-align: left;
+		font-size: 3.5rem;
+	}
+
+	.greetings p {
+		width: 80%;
+		font-size: 1.7rem;
+	}
+
+	.nav ul {
+		width: 60vw;
+		gap: 1em;
+	}
+	.nav-link a {
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (max-width: 428px) {
+	.container {
+		width: 100vw;
+		align-items: center;
+	}
+
+	.greetings {
+		width: 80vw;
+	}
+
+	.greetings h1 {
+		font-size: 2.5rem;
+	}
+
+	.greetings p {
+		font-size: 1.3rem;
+	}
+	.credits {
+		writing-mode: initial;
+		top: 1em;
+		left: initial;
+	}
+	.nav ul {
+		width: 90vw;
+	}
+	.nav-link a {
+		font-size: 1rem;
+	}
+	.nav-text {
+		width: initial;
+	}
+}
+
 @media (prefers-color-scheme: dark) {
 	body {
 		background: var(--black);
@@ -240,70 +395,4 @@ body {
 	html {
 		color-scheme: dark;
 	}
-}
-
-@media screen and (max-width: 1024px) {
-	.container {
-		height: 100vh;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-	}
-
-	.greetings {
-		width: 70vw;
-	}
-
-	.nav ul {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 3em;
-	}
-
-	.nav-link hidden {
-		display: none;
-	}
-
-	.nav-text {
-		color: var(--grey);
-	}
-
-	.nav-icon {
-		display: none;
-	}
-
-	.nav-link .active {
-		display: initial;
-	}
-	.show {
-		display: none;
-	}
-	.contacts {
-		display: flex;
-		flex-direction: column;
-	}
-}
-
-@media screen and (max-width: 740px) {
-	.greetings {
-		width: 50vw;
-	}
-	.greetings h1 {
-		font-size: 3.5rem;
-	}
-
-	.greetings p {
-		width: 80vw;
-		font-size: 2rem;
-	}
-
-	.nav ul {
-		gap: 3em;
-	}
-	.nav-link a {
-		font-size: 1.5rem;
-	}
-}
-@media screen and (max-width: 428px) {
 }

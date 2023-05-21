@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Navbar from './Navbar';
+import Credits from './Credits';
 const Home = () => {
 	const [time, setTime] = useState();
 
@@ -20,21 +21,24 @@ const Home = () => {
 
 	return (
 		time && (
-			<section className="container">
-				<div className="greetings">
-					<h1 className="text-primary">
-						Good{' '}
-						<span>
-							{time}!
-							<img src={`img/${time}.png`} alt="time icon" />
-						</span>
-					</h1>
-					<p className="text-detail">
-						Welcome to my personal web development portfolio.
-					</p>
-				</div>
-				<Navbar />
-			</section>
+			<>
+				<section className="container">
+					<div className="greetings">
+						<h1 className="text-primary">
+							Good{' '}
+							<span>
+								{time}!
+								<img src={`img/${time}.png`} alt="time icon" />
+							</span>
+						</h1>
+						<p className="text-detail">
+							Welcome to my personal web development portfolio.
+						</p>
+					</div>
+					<Navbar />
+				</section>
+				<Credits />
+			</>
 		)
 	);
 };

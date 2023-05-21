@@ -60,7 +60,7 @@ const Navbar = () => {
 									<span
 										className="nav-text hidden"
 										onClick={(e) => {
-											if (window.screen.width >= 1024)
+											if (window.screen.width >= 1060)
 												e.preventDefault();
 										}}
 									>
