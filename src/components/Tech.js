@@ -1,7 +1,7 @@
 const Tech = ({ name }) => {
 	return (
 		<div className="tech">
-			<img src={`img/${name}-light.png`} alt={`${name} icon`} />
+			<img src={`img/${name}Icon.png`} alt={`${name} icon`} />
 		</div>
 	);
 };

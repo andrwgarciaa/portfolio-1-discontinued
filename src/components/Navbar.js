@@ -7,25 +7,25 @@ const Navbar = () => {
 		{
 			name: 'Home',
 			path: '/',
-			src: '/home',
+			src: 'Home',
 			isActive: /^\/$/g.test(locationPath),
 		},
 		{
 			name: 'Tech Stack',
 			path: '/tech-stack',
-			src: 'tech-stack',
+			src: 'TechStack',
 			isActive: locationPath.match('/tech-stack'),
 		},
 		{
 			name: 'Projects',
 			path: '/projects',
-			src: 'projects',
+			src: 'Projects',
 			isActive: locationPath.match('/projects'),
 		},
 		{
 			name: 'Contacts',
 			path: '/contacts',
-			src: 'contacts',
+			src: 'Contacts',
 			isActive: locationPath.match('/contacts'),
 		},
 	];
@@ -37,9 +37,9 @@ const Navbar = () => {
 		if (!img.parentNode.classList.contains('active')) {
 			span.classList.remove('hidden');
 			span.classList.add('show');
-			img.src = `img/${name}-active.png`;
+			img.src = `img/${name}Active.png`;
 			img.addEventListener('mouseleave', () => {
-				img.src = `img/${name}-inactive.png`;
+				img.src = `img/${name}Inactive.png`;
 				span.classList.add('hidden');
 				span.classList.remove('show');
 			});
@@ -77,16 +77,11 @@ const Navbar = () => {
 											? 'nav-icon active'
 											: 'nav-icon'
 									}
-									src={`img/${item.src}-${
-										item.isActive ? 'active' : 'inactive'
+									src={`img/${item.src}${
+										item.isActive ? 'Active' : 'Inactive'
 									}.png`}
 									alt={`${item.name} Logo`}
-									name={
-										item.name === 'Tech Stack'
-											? 'tech-stack'
-											: item.name.charAt(0) +
-											  item.name.substring(1)
-									}
+									name={item.src}
 									onMouseOver={(e) => handleMouseOver(e)}
 								/>
 							</Link>

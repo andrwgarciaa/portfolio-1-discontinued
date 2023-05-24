@@ -5,14 +5,14 @@ const Projects = () => {
 	const [showcaseIndex, setShowcaseIndex] = useState(0);
 	const project = [
 		{
-			name: 'portfolio',
-			web_url: 'https://andrewgarcia.netlify.app/',
+			name: 'Portfolio',
+			web_url: 'https://andrwgarciaa.me/',
 			github_url: 'https://github.com/andrwgarciaa/portfolio',
 			description:
 				'My own personal portfolio webpage. Designed and developed alone, according to my taste.',
 		},
 		{
-			name: 'medicare',
+			name: 'Medicare',
 			web_url: 'https://amdp-1.netlify.app/',
 			github_url: 'https://github.com/andrwgarciaa/amdp-1',
 			description:
@@ -37,7 +37,7 @@ const Projects = () => {
 						<div className="capture">
 							<img
 								key={project[showcaseIndex].name}
-								src={`img/capture-${project[showcaseIndex].name}.png`}
+								src={`img/${project[showcaseIndex].name}.png`}
 								alt={project[showcaseIndex].name}
 							/>
 							<legend className="project-url text-detail">
@@ -53,7 +53,10 @@ const Projects = () => {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<img src="img/github.png" alt="github icon" />
+								<img
+									src="img/GithubIcon.png"
+									alt="github icon"
+								/>
 								GitHub
 							</a>
 							<a
@@ -61,7 +64,10 @@ const Projects = () => {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<img src="img/browser.png" alt="browser icon" />
+								<img
+									src="img/BrowserIcon.png"
+									alt="browser icon"
+								/>
 								Visit Page
 							</a>
 						</div>

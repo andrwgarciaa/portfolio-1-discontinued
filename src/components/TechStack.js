@@ -5,14 +5,14 @@ const About = () => {
 	return (
 		<section className="container">
 			<div className="stack">
-				<Tech name="html" />
-				<Tech name="css" />
-				<Tech name="javascript" />
-				<Tech name="react" />
-				<Tech name="node" />
-				<Tech name="express" />
-				<Tech name="mongo" />
-				<Tech name="mysql" />
+				<Tech name="HTML" />
+				<Tech name="CSS" />
+				<Tech name="Javascript" />
+				<Tech name="React" />
+				<Tech name="Node" />
+				<Tech name="Express" />
+				<Tech name="Mongo" />
+				<Tech name="MySql" />
 			</div>
 			<Navbar />
 		</section>
