@@ -31,20 +31,20 @@
 	background-color: var(--detail);
 }
 
-a {
-	color: var(--black);
-	text-decoration: none;
-}
-
 body {
 	display: flex;
 	width: 100vw;
 	height: 100vh;
 	justify-content: center;
 	align-items: center;
-	background: var(--grey);
-	color: var(--black);
+	background: var(--black);
+	color: var(--grey);
 	overflow: hidden;
+}
+
+a {
+	color: var(--black);
+	text-decoration: none;
 }
 
 .nav-link a {
@@ -94,6 +94,7 @@ body {
 }
 
 .greetings > h1 {
+	color: var(--grey);
 	font-weight: 600;
 	font-size: 4.5rem;
 }
@@ -365,7 +366,7 @@ body {
 	}
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	body {
 		background: var(--black);
 		color: var(--grey);
@@ -395,4 +396,4 @@ body {
 	html {
 		color-scheme: dark;
 	}
-}
+} */

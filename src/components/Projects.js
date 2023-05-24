@@ -44,7 +44,7 @@ const Projects = () => {
 								{project[showcaseIndex].web_url}
 							</legend>
 						</div>
-						<p className="project-description text-secondary">
+						<p className="project-description text-primary">
 							{project[showcaseIndex].description}
 						</p>
 						<div className="project-links">

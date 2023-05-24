@@ -6,22 +6,26 @@ const Navbar = () => {
 	const routes = [
 		{
 			name: 'Home',
-			path: '/home',
-			isActive: locationPath.match('/home'),
+			path: '/',
+			src: '/home',
+			isActive: /^\/$/g.test(locationPath),
 		},
 		{
 			name: 'Tech Stack',
 			path: '/tech-stack',
+			src: 'tech-stack',
 			isActive: locationPath.match('/tech-stack'),
 		},
 		{
 			name: 'Projects',
 			path: '/projects',
+			src: 'projects',
 			isActive: locationPath.match('/projects'),
 		},
 		{
 			name: 'Contacts',
 			path: '/contacts',
+			src: 'contacts',
 			isActive: locationPath.match('/contacts'),
 		},
 	];
@@ -73,7 +77,7 @@ const Navbar = () => {
 											? 'nav-icon active'
 											: 'nav-icon'
 									}
-									src={`img/${item.path.substring(1)}-${
+									src={`img/${item.src}-${
 										item.isActive ? 'active' : 'inactive'
 									}.png`}
 									alt={`${item.name} Logo`}
