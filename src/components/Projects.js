@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Navbar from './Navbar';
+import Credits from './Credits';
 
 const Projects = () => {
 	const [showcaseIndex, setShowcaseIndex] = useState(0);
@@ -30,63 +31,66 @@ const Projects = () => {
 		setShowcaseIndex(index);
 	};
 	return (
-		<section className="container">
-			<div className="project-card-container">
-				<div className="project-card">
-					<div className="project">
-						<div className="capture">
-							<img
-								key={project[showcaseIndex].name}
-								src={`img/${project[showcaseIndex].name}.png`}
-								alt={project[showcaseIndex].name}
-							/>
-							<legend className="project-url text-detail">
-								{project[showcaseIndex].web_url}
-							</legend>
-						</div>
-						<p className="project-description text-primary">
-							{project[showcaseIndex].description}
-						</p>
-						<div className="project-links">
-							<a
-								href={project[showcaseIndex].github_url}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+		<>
+			<section className="container">
+				<div className="project-card-container">
+					<div className="project-card">
+						<div className="project">
+							<div className="capture">
 								<img
-									src="img/GithubIcon.png"
-									alt="github icon"
+									key={project[showcaseIndex].name}
+									src={`img/${project[showcaseIndex].name}.png`}
+									alt={project[showcaseIndex].name}
 								/>
-								GitHub
-							</a>
-							<a
-								href={project[showcaseIndex].web_url}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<img
-									src="img/BrowserIcon.png"
-									alt="browser icon"
-								/>
-								Visit Page
-							</a>
+								<legend className="project-url text-detail">
+									{project[showcaseIndex].web_url}
+								</legend>
+							</div>
+							<p className="project-description text-primary">
+								{project[showcaseIndex].description}
+							</p>
+							<div className="project-links">
+								<a
+									href={project[showcaseIndex].github_url}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img
+										src="img/GithubIcon.png"
+										alt="github icon"
+									/>
+									GitHub
+								</a>
+								<a
+									href={project[showcaseIndex].web_url}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img
+										src="img/BrowserIcon.png"
+										alt="browser icon"
+									/>
+									Visit Page
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div className="project-nav">
-					<div
-						className="dot active"
-						onClick={(e) => handleShowcase(e, 0)}
-					></div>
-					<div
-						className="dot"
-						onClick={(e) => handleShowcase(e, 1)}
-					></div>
+					<div className="project-nav">
+						<div
+							className="dot active"
+							onClick={(e) => handleShowcase(e, 0)}
+						></div>
+						<div
+							className="dot"
+							onClick={(e) => handleShowcase(e, 1)}
+						></div>
+					</div>
 				</div>
-			</div>
-			<Navbar />
-		</section>
+				<Navbar />
+			</section>
+			<Credits />
+		</>
 	);
 };
 

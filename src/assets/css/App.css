@@ -84,12 +84,10 @@ a {
 
 .greetings span {
 	position: relative;
-	margin: 0.5em 0.5em 0 0;
 }
 
-.greetings img {
+.times img {
 	position: absolute;
-	right: -0.8em;
 	top: -10px;
 }
 

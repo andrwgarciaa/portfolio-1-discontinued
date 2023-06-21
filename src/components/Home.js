@@ -26,8 +26,8 @@ const Home = () => {
 					<div className="greetings">
 						<h1 className="text-primary">
 							Good{' '}
-							<span>
-								{time}!
+							<span className="times">
+								<span>{time}!</span>
 								<img src={`img/${time}.png`} alt="time icon" />
 							</span>
 						</h1>
