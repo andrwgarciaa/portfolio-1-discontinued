@@ -7,3 +7,4 @@ This project was an experiment to test out my knowledge of React, and now it is 
 New version of portfolio project is expected.
 
 Repo discontinued due to an error which I can't figure out. Website moved to https://github.com/andrwgarciaa/portfolio-1-final
+This repo is being left alive to keep the commits for learning and improving.
